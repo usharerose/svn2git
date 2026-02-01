@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "svn2git"
+version = "0.1.0"
+description = "A Python-based service for one-way conversion from Subversion to Git repositories"
+authors = ["Chaojie Yan <ushareroses@gmail.com>"]
+readme = "README.md"
+packages = [{include = "svn2git"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
