@@ -1,0 +1,12 @@
+services:
+
+  svn2git-build:
+    build:
+      context: .
+    image: svn2git:${IMAGE_TAG:-latest}
+
+  svn2git-run:
+    image: svn2git:${IMAGE_TAG:-latest}
+    volumes:
+      - .:/app/svn2git
+    command: tail -f /dev/null
